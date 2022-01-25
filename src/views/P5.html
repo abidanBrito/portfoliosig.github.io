@@ -1,16 +1,14 @@
-<!---------------------------------
-    Autor: Luis Belloch Martínez
-    Fecha: 04/01/2022
------------------------------------>
-
+<!------------------------------------------
+// Autor: Luis Belloch
+// Fecha: 04/01/2021
+// ------------------------------------------>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>P5 - Teledetección</title>
-
+    <title>P5</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,64 +27,64 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../../index.html">Cartografia Proyecto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../../index.html">Proyecto Cartografía</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../../index.html">Inicio</a>
-                </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        P3 - Interpolación
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./P3-1.html">Precipitaciones</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./P3-2.html">Temperaturas</a>
-                    </div>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    P3 - Interpolación
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./P3-1.html">Precipitaciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./P3-2.html">Temperaturas</a>
+                </div>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./P4.html">P4 - Análisis del territorio</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./P5.html">P5 - Clasificación del terreno</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./P4.html">P4 - Análisis del territorio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./P5.html">P5 - Clasificación del terreno</a>
+            </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        P7 - Folium
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./P7-1.html"> Mujeres y no turismos </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./P7-2.html"> Mapa de contenedores</a>
-                    </div>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    P7 - Folium
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./P7-1.html"> Mujeres y no turismos </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./P7-2.html"> Mapa de contenedores</a>
+                </div>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./P8.html">P8 - PyQgis</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./P8.html">P8 - PyQgis</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./P9.html">P9 - Google Earth</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <li class="nav-item">
+                <a class="nav-link" href="./P9.html">P9 - GEE</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <h1>Clasificación del terreno de Castilla y Leon</h1>
     <div class="maps">
-        <iframe class="map-container" src="../../data/pdf/dNBR_lbelmar.pdf" width="100%" height="900px"></iframe> 
+        <iframe class="map-container" src="../../data/pdf/dNBR_lbelmar.pdf"></iframe>
     </div>
 </body>
 
